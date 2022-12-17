@@ -1,16 +1,14 @@
 #!/usr/bin/python3
-
 import sys
 
 numbers = []
-
 try:
     if len(sys.argv) > 1:
         with open(sys.argv[1], "r") as nf:
             try:
                 numbers = [int(l) for l in nf.readlines()]
             except Exception:
-               pass
+                pass
 except Exception:
     pass
 
